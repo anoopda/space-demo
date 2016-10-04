@@ -1,7 +1,7 @@
 var Backbone = require('backbone');
 var $ = require('jquery');
 var _ = require('underscore');
-var Main_template = require('../templates/main_template.js');
+var Main_template = require('../templates/status_template.js');
 var second_view  = require('./space_status_view2.js');
 // var Model = require('../model/model_work_status.js');
 
@@ -9,7 +9,7 @@ var second_view  = require('./space_status_view2.js');
 
 module.exports = Backbone.View.extend({
 
-	el : $('#container'),
+	el : $('#status_input'),
 
     initialize: function() {
         this.render();
@@ -36,7 +36,7 @@ module.exports = Backbone.View.extend({
  	   	details1 = $('#activity_description').val()
 
  	   	console.log(date1);
-    this.collection.push({time_hours:time_hrs1,time_min:time_min1,activity_type:activity_type1,details:details1,date:date1});
+    this.collection.push({time_hours:time_hrs1,time_min:time_min1,activity_type:activity_type1,details:details1,date:date1,project:project1});
     app.last = this.collection.last();
 
        if ( !! app.last ) {
