@@ -1,0 +1,21 @@
+#container1 h1{
+
+ color: #4c4f53;
+ font-size: 24px;
+}
+
+#status_view_wrapper{
+	    border: 1px solid #ddd;
+}
+#date_wrapper{
+	display: inline-block;
+}
+#project_wrapper{
+	display:inline-block;
+}
+#activity_wrapper{
+	display: inline-block;
+}
+#time_wrapper{
+	display: inline-block;
+}
