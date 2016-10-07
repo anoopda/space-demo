@@ -9,7 +9,7 @@ var second_view  = require('./space_status_view2.js');
 
 module.exports = Backbone.View.extend({
 
-	el : $('#status_input'),
+	el : $('#app'),
 
     initialize: function() {
         this.render();
@@ -18,7 +18,7 @@ module.exports = Backbone.View.extend({
     render: function() {
     	console.log("View1");
     	var template= _.template(Main_template);
-        this.$el.html(template);
+        this.$el.append(template);
         return this;
     },
 

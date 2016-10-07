@@ -1,3 +1,6 @@
+body{
+	background: #fff;
+}
 #container1 h1{
 
  color: #4c4f53;
@@ -19,3 +22,13 @@
 #time_wrapper{
 	display: inline-block;
 }
+ #status_view_wrapper select{
+ 	border:none;
+ 	color: #404040;
+ 	background-color: #fff;
+ 	border: 1px solid #BDBDBD;
+ }
+ #detail_wrapper textarea{
+width:560px;
+height:100px;
+ }
